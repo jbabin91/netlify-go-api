@@ -1,4 +1,4 @@
-module netlify-go-api
+module jbabin91/netlify-go-api
 
 go 1.12
 
