@@ -1,8 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"log"
+
+	"github.com/jbabin91/netlify-go-api/cmd"
+)
 
 func main() {
-	fmt.Println("hello world!")
+	if err := cmd.RootCommand().Execute(); err != nil {
+		log.Fatal(err)
+	}
 }
 
